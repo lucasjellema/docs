@@ -434,7 +434,7 @@ Dapr assumes data stores are eventually consistent by default. A state should:
 When a strong consistency hint is attached, a state store should:
 
 * For read requests, the state store should return the most up-to-date data consistently across replicas.
-* For write/delete requests, the state store should synchronisely replicate updated data to configured quorum before completing the write request.
+* For write/delete requests, the state store should synchronously replicate updated data to configured quorum before completing the write request.
 
 ### Example - Complete options request example
 
